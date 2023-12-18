@@ -1,0 +1,1076 @@
+@font-face {
+	font-family: Proxima Nova;
+	src: url('../fonts/ProximaNova-Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: Proxima Nova;
+	src: url('../fonts/ProximaNova-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Proxima Nova;
+	src: url('../fonts/ProximaNova-Semibold.ttf');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Proxima Nova;
+	src: url('../fonts/ProximaNova-Light.ttf');
+	font-weight: 300;
+}
+
+body {
+	font-family: Proxima Nova;
+	overflow-x: hidden;
+	color: #323941;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button,
+input,
+select {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+nav .mobile {
+	display: none;
+}
+
+@media screen and (max-width: 375px) {
+	.container {
+		max-width: 343px;
+	}
+
+	nav ul.links,
+	nav .social_contact {
+		display: none !important;
+	}
+
+	nav {
+		background: #fff !important;
+	}
+
+	nav a {
+		color: #323941;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.36px;
+	}
+
+	nav .mobile {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	nav .mobile .mobile_links {
+		display: flex;
+		gap: 10px;
+	}
+
+	nav .mobile .logo img {
+		width: 94px;
+		height: 27.404px;
+	}
+}
+
+nav {
+	background-color: #323941;
+}
+
+nav a {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.36px;
+}
+
+nav .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 13px 0;
+}
+
+nav .container ul.links {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+nav .container .social_contact {
+	display: flex;
+	gap: 14px;
+}
+header .company {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 18px 0 20px;
+}
+
+header .company .director {
+	display: flex;
+	gap: 13px;
+}
+
+header .company .director .director_info {
+	padding-top: 8px;
+	max-width: 100px;
+}
+
+header .company .director .director_info h2 {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 119.3%;
+	text-transform: uppercase;
+}
+
+header .company .director .director_info a {
+	color: #009eff;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 119.3%;
+	text-decoration-line: underline;
+	text-transform: lowercase;
+	display: block;
+	margin-top: 2px;
+}
+
+header .company .director .director_ava {
+	width: 63px;
+	height: 63px;
+	border-radius: 63px;
+	border: 2px solid #323941;
+}
+
+header .company .logo img {
+	width: 216px;
+	height: 62.972px;
+}
+
+header .company .logo {
+	display: block;
+	width: 216px;
+	height: 62.972px;
+}
+
+@media screen and (max-width: 375px) {
+	header .company {
+		display: none;
+	}
+}
+
+header .slider {
+	margin-top: 61px;
+	position: relative;
+	padding-bottom: 180px;
+}
+
+header .slider h1 {
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 87.3%;
+	text-transform: uppercase;
+	max-width: 567px;
+	padding-top: 64px;
+}
+
+header .slider .preview_segway {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+header .slider .preview_segway .preview_img {
+	width: 432px;
+	height: 687px;
+}
+
+header .slider .preview_segway .paginate {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+header .slider .preview_segway .paginate .dote {
+	width: 10px;
+	height: 10px;
+	border-radius: 99px;
+	background-color: #999999;
+}
+header .slider .preview_segway .paginate .dote.active {
+	background-color: #009eff;
+}
+
+header .slider .prices {
+	margin-top: 60px;
+}
+
+header .slider .prices .sale {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration-line: line-through;
+}
+header .slider .prices .price {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.btn {
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+}
+
+.btn.btn-blue {
+	background-color: #009eff;
+}
+
+header .slider .btn {
+	margin-top: 60px;
+	padding: 13px 66px;
+	max-width: 239.591px;
+}
+
+header .slider_content .prev,
+header .slider_content .next {
+	display: none;
+}
+
+@media screen and (max-width: 375px) {
+	header .slider {
+		padding-bottom: 80px;
+	}
+
+	header .slider_content .prev,
+	header .slider_content .next {
+		display: block;
+		background-color: transparent;
+	}
+
+	header .slider_content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	header .slider .preview_segway {
+		position: relative;
+	}
+	header .slider {
+		text-align: center;
+	}
+	header .slider h1 {
+		font-size: 37px;
+	}
+	header .slider .prices {
+		margin-top: 75px;
+	}
+
+	header .slider .preview_segway {
+		margin-top: 7px;
+		text-align: center;
+	}
+	header .slider .preview_segway .preview_img {
+		width: 266px;
+		height: 266px;
+	}
+	header .slider .btn {
+		margin: 18.22px auto 0;
+		padding: 13px 0;
+		max-width: 140.486px;
+	}
+
+	header .slider .preview_segway .paginate {
+		margin-top: 9px;
+		gap: 8px;
+	}
+
+	header .slider .preview_segway .paginate .dote {
+		width: 8px;
+		height: 8px;
+	}
+}
+
+.parking {
+	padding: 63px 0 39px;
+	background: linear-gradient(
+		0deg,
+		#eee 0%,
+		rgba(245, 245, 245, 0.79) 43.81%,
+		rgba(255, 255, 255, 0) 82.46%
+	);
+}
+
+.parking .container {
+	display: flex;
+	align-items: center;
+	gap: 45.89px;
+}
+
+main h2 {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 119.3%;
+	text-transform: uppercase;
+}
+
+.parking .video {
+	width: 488px;
+	height: 278px;
+	background: #c4c4c4;
+	margin-top: 28.67px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.parking .video .btn {
+	background-color: transparent;
+}
+
+.parking .video .video_text {
+	margin-top: 6.67px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 145.3%;
+	text-decoration-line: underline;
+}
+
+.parking .parking_preview {
+	width: 453.111px;
+	height: 453px;
+}
+
+.parking .parking_preview .parking_preview_img img {
+	position: relative;
+	width: 417px;
+	height: 388px;
+}
+
+.parking .parking_preview .parking_preview_img {
+	background: url('../img/Ellipse\ 41.png') no-repeat;
+	background-size: cover;
+	width: 453px;
+	height: 453px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.parking_preview_mobile {
+	display: none;
+}
+
+@media screen and (max-width: 375px) {
+	main h2 {
+		text-align: center;
+		font-size: 26px;
+	}
+
+	.parking .parking_content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.parking .parking_preview {
+		display: none;
+	}
+
+	.parking .video {
+		width: 343px;
+		height: 195px;
+		margin-top: 60px;
+	}
+
+	.parking_preview_mobile {
+		display: flex;
+		width: 296px;
+		height: 296px;
+	}
+
+	.parking .parking_preview_mobile .parking_preview_img {
+		background: url('../img/Ellipse\ 41.png') no-repeat;
+		background-size: cover;
+		width: 296px;
+		height: 296px;
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.parking .parking_preview_mobile .parking_preview_img img {
+		position: relative;
+		width: 260.723px;
+		height: 242.591px;
+	}
+
+	.parking .video .video_text {
+		text-decoration-line: none;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0.32px;
+		margin-top: 20px;
+	}
+}
+
+.accessories h2 {
+	margin-top: 112px;
+	text-align: center;
+}
+
+.accessories_list {
+	margin-top: 37px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 23.14px 54px;
+}
+
+.accessories_list .accessorie_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.accessories_list .accessorie_item .accessorie_item_preview {
+	background-color: #eee;
+	background-size: cover;
+	border-radius: 100%;
+	width: 136.996px;
+	height: 133px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.accessories_list .accessorie_item h3 {
+	margin-top: 20px;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 23px;
+	text-transform: uppercase;
+}
+
+.accessories_list .accessorie_item p {
+	margin-top: 16px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 119.3%;
+	color: #999;
+	min-height: 78px;
+}
+
+.accessories_list .accessorie_item .accessorie_item_price {
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.btn.btn-outline {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 119.3%;
+	color: #c6c6c6;
+	outline: 1px solid #c6c6c6;
+	padding: 12px 25px;
+	background-color: transparent;
+}
+
+.btn.btn-outline:hover {
+	outline: none;
+	background-color: #009eff;
+	color: #fff;
+}
+
+.accessories_list .accessorie_item .btn.btn-outline {
+	margin-top: 14px;
+}
+
+.accessories .btn {
+	width: 235.88px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px auto 0;
+}
+
+.accessorie_item .accessorie_item_price span {
+	display: none;
+}
+
+@media screen and (max-width: 375px) {
+	.accessories h2 {
+		margin-top: 49px;
+	}
+
+	.accessories_list {
+		margin-top: 37px;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 54px 23px;
+	}
+	.accessories_list .accessorie_item {
+		text-align: left;
+	}
+
+	.accessories_list .accessorie_item h3 {
+		margin-top: 19px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 23px;
+		text-transform: uppercase;
+	}
+
+	.accessories_list .accessorie_item p {
+		margin-top: 7px;
+		font-size: 12px;
+		font-weight: 400;
+		color: #999;
+		min-height: 90px;
+	}
+
+	.accessories .btn {
+		width: 153px;
+		height: 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 17px auto 0;
+	}
+
+	.accessories > .btn {
+		display: none;
+	}
+
+	.btn.btn-outline {
+		outline: none;
+		background-color: #009eff;
+		color: #fff;
+		border-radius: 4px;
+	}
+
+	.accessorie_item:nth-of-type(n + 3) {
+		display: none;
+	}
+
+	.accessorie_item .accessorie_item_price {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.accessorie_item .accessorie_item_price span {
+		color: #999;
+		display: inline;
+	}
+}
+
+.duo {
+	width: 100vw;
+	margin-top: 111px;
+	height: 724px;
+}
+
+@media screen and (max-width: 375px) {
+	.duo {
+		margin-top: 72px;
+		height: 406px;
+		background-image: url('../img/1431817_d12_b\ 1-mobile.png');
+	}
+
+	.duo img {
+		display: none;
+	}
+}
+
+.features {
+	margin-top: 63px;
+	padding-bottom: 73px;
+}
+
+.features h2 {
+	text-align: center;
+}
+
+.features .features_list {
+	margin-top: 81px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-around;
+	gap: 29px 16px;
+}
+
+.features .features_list .feature_icon {
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.features .features_list .feature_icon.icon_one {
+	background-image: url('../img/172557_speedometer_icon\ 3.svg');
+}
+
+.features .features_list .feature_icon.icon_two {
+	background-image: url('../img/2578125_ampoule_bulb_electricity_light_icon\ 1.svg');
+}
+
+.features .features_list .feature_icon.icon_three {
+	background-image: url('../img/172557_speedometer_icon\ 2.svg');
+}
+
+.features .features_list .feature_icon.icon_four {
+	background-image: url('../img/Frame\ 2.svg');
+}
+
+.features .features_list .feature_icon.icon_five {
+	background-image: url('../img/172557_speedometer_icon\ 2-1.svg');
+}
+
+.features .features_list .feature_icon.icon_six {
+	background-image: url('../img/2417497_drop_raindrop_damp_droplet_rain_icon\ 1.svg');
+}
+
+.features .features_list .feature_icon.icon_seven {
+	background-image: url('../img/172557_speedometer_icon\ 3.svg');
+}
+
+.features .features_list .feature_icon.icon_eight {
+	background-image: url('../img/172557_speedometer_icon\ 3-1.svg');
+}
+
+.features .features_list .feature_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.features .features_list .feature_item h3 {
+	font-size: 35px;
+	font-weight: 300;
+	background: linear-gradient(180deg, #009eff 0%, #007bcd 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.features .features_list .feature_item p {
+	font-size: 18px;
+	font-weight: 400;
+	color: #999;
+}
+
+@media screen and (max-width: 375px) {
+	.features .features_list .feature_icon {
+		width: 64px;
+		height: 64px;
+	}
+
+	.features .features_list .feature_item h3 {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 23px;
+	}
+
+	.features .features_list .feature_item p {
+		font-size: 12px;
+		margin-top: 3px;
+	}
+}
+
+.advertisement_block:nth-child(2n + 1) {
+	background-color: #0e0e16;
+	color: #fff;
+}
+
+.smart_battery {
+	background: url('../img/Батареи.png') no-repeat;
+	background-position: center right;
+	height: 547px;
+	position: relative;
+}
+
+.smart_battery::before {
+	content: '';
+	position: absolute;
+	border-radius: 455px;
+	opacity: 0.2;
+	background: #3a75f7;
+	filter: blur(155.5px);
+	width: 455px;
+	height: 455px;
+	left: -200px;
+	bottom: -100px;
+}
+
+.smart_battery .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.smart_battery .battery_content {
+	max-width: 553px;
+}
+
+@media screen and (max-width: 375px) {
+	.smart_battery {
+		background: url('../img/Батареи-mobile.png') no-repeat;
+		background-position: top center;
+		height: 471px;
+	}
+
+	.smart_battery .container {
+		text-align: left;
+		justify-content: end;
+		padding-bottom: 44px;
+	}
+
+	.smart_battery h2 {
+		text-align: left;
+	}
+}
+
+.title_advertisement {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 119.3%;
+	text-transform: uppercase;
+}
+
+.desc_advertisement {
+	margin-top: 18px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.desc_advertisement span {
+	color: #6c6c6c;
+}
+
+@media screen and (max-width: 375px) {
+	.title_advertisement {
+		font-size: 20px;
+		line-height: 24.5px;
+	}
+
+	.desc_advertisement {
+		font-size: 15px;
+		letter-spacing: 0.3px;
+		margin-top: 8px;
+		font-weight: 300;
+	}
+
+	.desc_advertisement span {
+		color: inherit;
+		font-size: 11px;
+		letter-spacing: 0.22px;
+	}
+}
+
+.dual_braking {
+	height: 547px;
+	background: url('../img/Фото-1.png') no-repeat;
+	background-position: center left;
+}
+
+.dual_braking .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+	height: 100%;
+	width: 100%;
+}
+
+.dual_braking .container .brakig_content {
+	padding-right: 26px;
+	max-width: 388px;
+}
+
+@media screen and (max-width: 375px) {
+	.dual_braking {
+		height: 547px;
+		background: url('../img/cf59164f5945a7e4fe236bee0420e5e1 1.png')
+			no-repeat;
+		background-position: top center;
+	}
+
+	.dual_braking .container {
+		justify-content: end;
+		text-align: left;
+	}
+
+	.dual_braking .container .brakig_content {
+		max-width: inherit;
+		text-align: left;
+		padding-bottom: 30px;
+	}
+
+	.dual_braking h2 {
+		text-align: left;
+	}
+}
+
+.built_in_front {
+	height: 547px;
+	background: url('../img/Батареи-1.png') no-repeat;
+	background-position: center right;
+}
+
+.built_in_front .container {
+	height: 100%;
+}
+
+.built_in_front .built_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	max-width: 596px;
+}
+
+@media screen and (max-width: 375px) {
+	.built_in_front {
+		height: 483px;
+		background: url('../img/Батареи-1-mobile.png') no-repeat;
+		background-position: center top;
+	}
+
+	.built_in_front .built_content {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		max-width: inherit;
+		padding-bottom: 30px;
+	}
+
+	.built_in_front h2 {
+		text-align: left;
+	}
+}
+
+.one_step {
+	height: 518px;
+	padding: 18px 0 37px;
+	text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+	.one_step {
+		padding: 33px 0 15.56px;
+		height: auto;
+	}
+	.one_step img {
+		display: none;
+	}
+
+	.one_step .mobile_step_img {
+		margin-top: 51px;
+		width: 100%;
+		height: 205.436px;
+		background-image: url('../img/MAX-G30E-II_Product-picture_Folded-KickScooter mobile.png');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+.regenerative_brake {
+	height: 547px;
+	padding-top: 67px;
+	background: url('../img/Батареи-2.png') no-repeat;
+	background-position: center right;
+}
+
+.regenerative_brake .regenerative_content .title_advertisement {
+	max-width: 808px;
+}
+
+.regenerative_brake .regenerative_content .desc_advertisement {
+	max-width: 601px;
+}
+
+@media screen and (max-width: 375px) {
+	.regenerative_brake {
+		height: 434px;
+		padding-top: 0;
+		background: url('../img/1cc9e09cc4d171fa0236d21423cce0b2\ 1.png')
+			no-repeat;
+		background-position: center top;
+	}
+
+	.regenerative_brake .container {
+		height: 100%;
+	}
+	.regenerative_brake .regenerative_content {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		padding-bottom: 35px;
+	}
+
+	.regenerative_brake h2 {
+		text-align: left;
+	}
+}
+
+.easy_one_cord {
+	height: 547px;
+	background: url('../img/Батареи-3.png') no-repeat;
+	background-position: center left;
+}
+.easy_one_cord .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+	height: 100%;
+}
+
+.easy_one_cord .easy_one_cord_content {
+	max-width: 408px;
+}
+
+@media screen and (max-width: 375px) {
+	.easy_one_cord {
+		height: 439px;
+		background: url('../img/1156431_middle mobile.png') no-repeat;
+		background-position: center bottom;
+	}
+	.easy_one_cord .container {
+		justify-content: start;
+		padding-top: 30px;
+	}
+}
+
+.riding_modes {
+	height: 547px;
+	background: url('../img/Батареи-4.png') no-repeat;
+	background-position: center right;
+}
+
+.riding_modes .container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.riding_modes .riding_modes_content {
+	max-width: 417px;
+}
+
+@media screen and (max-width: 375px) {
+	.riding_modes {
+		height: 366px;
+		background: url('../img/3802011-Ninebot-Segway-KickScooter-MAX-G30-2 mobile.png')
+			no-repeat;
+		background-position: center bottom;
+	}
+	.riding_modes .container {
+		padding-top: 40px;
+		justify-content: start;
+	}
+
+	.riding_modes h2 {
+		text-align: left;
+	}
+}
+
+footer {
+	background: #32393f;
+	padding: 21px 0 19.27px;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .container .links_footer {
+	display: flex;
+	align-items: center;
+	gap: 43.94px;
+}
+
+footer .container .links_footer a {
+	color: #fff;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 119.3%;
+}
+
+footer .logo {
+	display: block;
+}
+
+footer .logo img {
+	width: 173.747px;
+	height: 50.727px;
+}
+
+@media screen and (max-width: 375px) {
+	footer {
+		background: #32393f;
+		padding: 29px 0 89px;
+	}
+	footer .container {
+		flex-direction: column;
+	}
+
+	footer .container .links_footer {
+		margin-top: 10.27px;
+		flex-direction: column-reverse;
+		gap: 11px;
+		max-width: 206px;
+		text-align: center;
+	}
+
+	footer .container .links_footer a {
+		color: #fff;
+		font-size: 18px;
+		line-height: normal;
+		letter-spacing: 0.36px;
+	}
+}
